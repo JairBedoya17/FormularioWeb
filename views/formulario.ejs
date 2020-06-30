@@ -1,0 +1,70 @@
+<!<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Formulario</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Realizar un pedido</h1>
+    <div class="container col-sm-4 text-left">
+
+        <form action="/formulario" method="POST">
+            <div class="form-group">
+                <label for="fecha1">Id orden:</label>
+                <input type="number" name="new_orderNumber" id="new_orderNumber" class="form-control" placeholder="Número orden">
+            </div>
+            <div class="form-group">
+                <label for="new_orderDate">Fecha orden:</label>
+                <input type="date" name="new_orderDate" id="new_orderDate" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="new_requiredDate">Fecha requerida</label>
+                <input type="date" name="new_requiredDate" id="new_requiredDate" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="new_shippedDate">Fecha de entrega</label>
+                <input type="date" name="new_shippedDate" id="new_shippedDate" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="new_status" id="new_status" class="form-control" placeholder="Estado">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="new_comments" id="new_comments" class="form-control" placeholder="Comentario">
+            </div>
+            <div class="form-group">
+                <input type="number" name="new_quantityOrdered" id="new_quantityOrdered" class="form-control" placeholder="Numero de productos">
+            </div>
+
+            <div class="form-group">
+                <input type="number" name="new_priceEach" id="new_priceEach" class="form-control" placeholder="Precio unitario">
+            </div>
+
+            <div class="form-group">
+                <input type="number" name="new_orderLineNumber" id="new_orderLineNumber" class="form-control" placeholder="Número orden de línea">
+            </div>
+
+            <input type="submit" class="btn btn-primary alert alert-success " value="Guardar datos">
+
+        </form>
+    </div>
+
+</body>
+
+</html>
